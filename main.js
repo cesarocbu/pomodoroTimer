@@ -1,7 +1,7 @@
 let workP = document.getElementById('work')
 let breakP = document.getElementById('short-break')
 
-let workTime = 1
+let workTime = 25
 let breakTime = 5
 let seconds = "00"
 
@@ -28,20 +28,18 @@ function startCount() {
         document.getElementById('minutes').innerHTML = workMinutes
         document.getElementById('seconds').innerHTML = seconds
         
-        seconds = seconds - 1
+        seconds--
         if(seconds === 0){
-            workMinutes = workMinutes - 1
+            workMinutes --
             if(workMinutes === -1){
                 if(breakCount % 2 === 0){
                     workMinutes = breakMinutes
                     breakCount++
-
                     workP.classList.remove('active')
                     breakP.classList.add('active')
                 } else{
                     workMinutes = workTime
                     breakCount++
-
                     breakP.classList.remove('active')
                     workP.classList.add('active')
                 }
@@ -50,5 +48,5 @@ function startCount() {
         }
     }
 
-    setInterval(timerFunction, 100)
+    setInterval(timerFunction, 1000)
 }
