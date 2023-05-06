@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6f3103b13c.js" crossorigin="anonymous"></script>
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>pomodoro timer</h1>
+            <div class="timer-selector">
+                <p id="work">Work</p>
+                <p id="short-break">Short break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-duotone fa-play fa-beat"></i></button>
+                <a id="reset" href="/"><i class="fa-duotone fa-play fa-beat"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
