@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 :root{
     font-size: 62.5%;
-    --color-primary: #1f2241;
-    --color-secondary: #ee7276;
-    --color-font: #ffffffe6;
-    --color-shadow: #393e79;
+    --color-primary: #212A3E;
+    --color-secondary: #F05454;
+    --color-font: #F1F6F9;
+    --color-shadow: #394867;
 }
 
 *{
@@ -29,7 +29,7 @@ i{
 }
 
 h1{
-    font-size: 3.2rem;
+    font-size: 4rem;
 }
 
 
